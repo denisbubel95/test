@@ -1,0 +1,41 @@
+body
+{
+	margin: 0;
+}
+.ellips{
+	background-color: yellow;
+	background-image: src('../img/sun-text.svg');
+}
+
+marquee{
+	width: 100%;
+	background-color: #F54932;
+	color: #fff;
+}
+marquee ul {
+	margin-left: -100%;
+}
+marquee ul li{
+	display: inline;
+	font-size: 22px;
+}
+marquee ul li:before{
+	content: "• ";
+}
+.line_inner{
+	display: flex;
+	width: fit-content;
+	align-items:center;
+	animation: 7s linear infinite running line;
+}
+.line{
+	font-size: 22px;
+}
+@keyframes line{
+	0%{
+		transform: translate3d(-25%, 0, 0);
+	}
+	100%{
+		transform: translate3d(-50%, 0, 0);
+	}
+}
